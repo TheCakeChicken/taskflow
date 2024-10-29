@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TaskFlow</title>
+        <link rel="stylesheet" href="https://unpkg.com/98.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body>
+        <div class="desktop">
+            <div>
+                <div class="window">
+                    <div class="title-bar">
+                        <div class="title-bar-text">TaskFlow</div>
+
+                        <div class="title-bar-controls">
+                            <button aria-label="Close" onclick="close()"></button>
+                        </div>
+                    </div>
+
+                    <div class="window-body">
+                        <p>Enter a task ID to go straight there on simPRO</p>
+
+                        <div class="field-row-stacked" style="width: 100%">
+                            <label for="instance-input">simPRO Instance</label>
+                            <input id="instance-input" type="text" />
+                        </div>
+
+                        <div class="field-row-stacked" style="width: 100%">
+                            <label for="id-input">Task ID</label>
+                            <input id="id-input" type="text" />
+                        </div>
+
+                        <section class="field-row button-row">
+                            <button onclick="clearTextbox()">Clear</button>
+                            <button onclick="makeWebsiteGoNow()">Go</button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <script src="/core.js"></script>
+    </body>
+</html>
