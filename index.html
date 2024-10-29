@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>TaskFlow</title>
-        <link rel="stylesheet" href="https://unpkg.com/98.css">
+        <link id="core-css" rel="stylesheet" href="https://unpkg.com/98.css">
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -18,7 +18,7 @@
                         </div>
                     </div>
 
-                    <div class="window-body">
+                    <div class="window-body has-space">
                         <p>Enter a task ID to go straight there on simPRO</p>
 
                         <div class="field-row-stacked" style="width: 100%">
@@ -35,6 +35,22 @@
                             <button onclick="clearTextbox()">Clear</button>
                             <button onclick="makeWebsiteGoNow()">Go</button>
                         </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings">
+                <div class="window">
+                    <div class="title-bar">
+                        <div class="title-bar-text">Theme</div>
+                    </div>
+
+                    <div class="window-body has-space">
+                        <div class="field-row-stacked" style="width: 100%">
+                            <button onclick="setTheme('98')">Windows 98</button>
+                            <button onclick="setTheme('xp')">Windows XP</button>
+                            <button onclick="setTheme('7')">Windows 7</button>
+                        </div>
                     </div>
                 </div>
             </div>

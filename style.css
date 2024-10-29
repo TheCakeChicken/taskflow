@@ -6,11 +6,34 @@ body {
 .desktop {
     height: 100vh;
 
-    background-color: #c0c0c0;
+    background-color: silver;
     display: flex;
 
     align-items: center;
     justify-content: center;
+}
+
+.settings {
+    position: absolute;
+
+    right: 1rem;
+    bottom: 1rem;
+}
+
+[data-theme="xp"] {
+    .desktop {
+        background-image: url('img/bliss.png');
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+[data-theme="7"] {
+    .desktop {
+        background-image: url('img/win7.jpg');
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 .button-row {
