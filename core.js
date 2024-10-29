@@ -47,6 +47,15 @@ function makeWebsiteGoNow() {
     const id = $('#id-input').val();
     const instance = $('#instance-input').val();
 
+    if (!instance || instance.trim() === "") {
+        alert('You need to specify an simPRO instance!\n\nThis is the first part of your simPRO URL\ne.g. progroup.simprocloud.com has an instance name of progroup')
+        return;
+    }
+
+    if (!id || id.trim() === "") {
+        if (!confirm("You haven't specified a Task ID. This will create a new task in simPRO.\n\nAre you sure you want to continue?")) return;
+    }
+
     localStorage.setItem('instance', instance);
 
     window.open(linkTemplate.replace('{instance}', instance).replace('{id}', id))
