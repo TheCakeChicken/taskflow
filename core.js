@@ -26,10 +26,6 @@ $(() => {
     }
 })
 
-function close() {
-    window.close();
-}
-
 function clearTextbox() {
     $('#id-input').val('');
 }
