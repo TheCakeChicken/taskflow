@@ -44,7 +44,7 @@ function makeWebsiteGoNow() {
     const instance = $('#instance-input').val();
 
     if (!instance || instance.trim() === "") {
-        alert('You need to specify an simPRO instance!\n\nThis is the first part of your simPRO URL\ne.g. progroup.simprocloud.com has an instance name of progroup')
+        alert('You need to specify a simPRO instance!\n\nThis is the first part of your simPRO URL\ne.g. progroup.simprocloud.com has an instance name of progroup')
         return;
     }
 
